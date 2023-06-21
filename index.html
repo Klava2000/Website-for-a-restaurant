@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ресторан</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Meera+Inimai&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="block">
+    <div id="container">
+    <form>
+        <h1>Разделение счета</h1>
+        <p>Счет</p>
+        <input id="bill" type="text" placeholder="Счет">
+        <p>Количество человек</p>
+        <input id="people" type="text" placeholder="Сколько человек?">
+        <p>Понравился ли вам наш сервер?</p>
+        <button id="addTip">Добавить чаевые</button>
+        <select id="tip">
+            <option disabled>Выберите вариант</option>
+            <option value="0.15">В восторге! 15%</option>
+            <option value="0.10">Хороший сервис! 10%</option>
+            <option value="0.05">Все было хорошо! 5%</option>
+            <option value="0.00" selected>Без чаевых!</option>
+        </select>
+        <button id="btn">Рассчитать</button>
+    </form>
+    <div id="totalAmountToPay">
+        <div id="totalBill">
+            <p>Счет</p>
+            <span></span>
+            <span id="dividedBill">на человека</span>
+        </div>
+        <div id="totalTip">
+            <p>Чаевые</p>
+            <span id="dividedTip"></span>
+            <span>на человека</span>
+        </div>
+        <div id="totalAmount">
+            <p>Сумма</p>
+            <span id="billAndTip"></span>
+            <span>на человека</span>
+        </div>
+    </div>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>

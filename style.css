@@ -1,0 +1,77 @@
+body {
+    background-image: url(foto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:#333333;
+}
+
+#container {
+    background-color: rgb(68, 68, 68, 0.8);
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 600px;
+    border-radius: 30px;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Meera Inimai', sans-serif;
+}
+
+h1 {
+    font-family: 'Meera Inimai', sans-serif;
+    color: #3AA6B9;
+    align-self: center;
+}
+
+input {
+    font-family: 'Meera Inimai', sans-serif;
+    padding: 5px;
+}
+
+#addTip {
+    background-color: #FFD0D0;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: 'Meera Inimai', sans-serif;
+}
+
+#btn {
+    background-color: #FF9EAA;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    font-family: 'Meera Inimai', sans-serif;
+}
+
+#tip {
+    font-family: 'Meera Inimai', sans-serif;
+    display: none;
+}
+
+#totalAmountToPay {
+    display: flex;
+    justify-content: space-around;
+}
+
+#totalBill, #totalTip, #totalAmount {
+    font-family: 'Meera Inimai', sans-serif;
+    background-color: #C1ECE4;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: #000;
+}
